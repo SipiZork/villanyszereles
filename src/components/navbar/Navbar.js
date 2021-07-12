@@ -6,7 +6,7 @@ import { COLORS } from '../../styles/styles';
 const Navbar = ({ activePage, changeActivePage }) => (
   <Nav>
     <Logo>
-      <h1>Villany-Mester</h1>
+      <h1>Budapest Villany</h1>
     </Logo>
     {/*<ul>
       <li onClick={() => changeActivePage(0)} className={activePage === 0 ? 'active' : ''}>Főoldal</li>

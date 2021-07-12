@@ -10,7 +10,7 @@ const Header = () => (
       <div className="description">
         <p className="underline-container">
           <div className="underline"></div>
-          Villany-Mester
+          Budapest Villany
         </p>
       </div>
       <div className="name underline-container">

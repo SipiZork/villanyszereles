@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Route } from 'react-router-dom';
 
-function App() {
+import GlobalStyle from './components/GlobalStyle';
+import Navbar from './components/navbar/Navbar';
+import HomePage from './pages/HomePage/HomePage';
+
+const App = () => {
+
+  const [activePage, setActivePage] = useState(0);
+  const changeActivePage = number => {
+    setActivePage(number);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle />
+      <Navbar changeActivePage={changeActivePage} activePage={activePage} />
+      <Route path='' exact>
+        <HomePage />
+      </Route>
     </div>
   );
 }

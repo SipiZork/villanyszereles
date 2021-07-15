@@ -35,14 +35,14 @@ const Progression = () => {
           <div className="light-bg"></div>
           <p>Felújítás</p>
         </div>
-        <div className={`tab ${activeTab === 1 ? 'active' : ''}`} onClick={() => changeActiveTab(1)}>
+        {/*<div className={`tab ${activeTab === 1 ? 'active' : ''}`} onClick={() => changeActiveTab(1)}>
           <div className="light-bg"></div>
           <p>Hibaelhírtás</p>
         </div>
         <div className={`tab ${activeTab === 2 ? 'active' : ''}`} onClick={() => changeActiveTab(2)}>
           <div className="light-bg"></div>
           <p>Kisgép bekötés</p>
-        </div>
+        </div>*/}
       </ProgressTab>
       <div className="title">
         <h2>{activeTitle}</h2>

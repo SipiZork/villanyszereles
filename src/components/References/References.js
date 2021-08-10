@@ -7,7 +7,7 @@ const References = () => {
     <StyledReferences>
       <div className="dark-bg"></div>
       <h2>Referenciák</h2>
-      <p>Hamarosan</p>
+      <p>Feltöltés alatt...</p>
    </StyledReferences>
   )
 }

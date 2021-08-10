@@ -7,11 +7,11 @@ export const renovationProgression = [
   {
     step: 2,
     title: 'Keresés',
-    description: 'Megtalál minket, és felkeres telefonon vagy email-en, amire mi még aznap reagálunk. A tervei meghallgatása után, megbeszélünk egy <strong>INGYENES</strong> kiszállási időpontot, hogy felmérjük a helyszínt, az állapotot, és átbeszélhessük személyesen is a terveit'
+    description: 'Megtalál minket, és felkeres telefonon vagy email-en, amire mi még aznap reagálunk. A tervei meghallgatása után, megbeszélünk egy <strong>INGYENES</strong> kiszállási időpontot, hogy felmérjük a helyszínt, annak állapotot, és egyeztethessük személyesen is a terveit'
   },
   {
     step: 3,
-    title: 'Igény felémrés',
+    title: 'Igényfelmérés',
     description: 'A megfelelő kérdéseket feltéve segítünk a tervet formába önteni, és mindent pontosan feljegyzetelünk, hogy a későbbiekben ebből ne lehessen félreértés'
   },
   {
@@ -22,17 +22,17 @@ export const renovationProgression = [
   {
     step: 5,
     title: 'Anyagbeszerzés',
-    description: 'Mi nem próbáljuk meg az árajánlatból kimaradt összegeket az anyagáron behozni. Éppen ezért javasoljuk, hogy személyesen áruházban, vagy akár egy villanyszerelési webshop-ban szerezze be a szereléshez általunk összeírt anyagokat. Természetesen ha segítségre van szüksége, készséggel állunk rendelkezésére. Ha mégis szeretée, hogy mi szerzzük be az anyagokat, természetesen annak sincs semmi akadálya'
+    description: 'Mi nem próbáljuk meg az árajánlatból kimaradt összegeket az anyagáron behozni. Éppen ezért javasoljuk, hogy személyesen áruházban, vagy akár egy villanyszerelési webshopban szerezze be a szereléshez általunk összeírt anyagokat. Természetesen ha segítségre van szüksége, készséggel állunk rendelkezésére. Ha mégis szeretné, hogy mi szerezzük be az anyagokat, természetesen annak sincs semmi akadálya'
   },
   {
     step: 6,
     title: 'Munka',
-    description: 'A Megbeszélt időpontban elkezdjük a munkát, és a lehető leggyorsabban a végére is érünk, szem előtt tartva a biztonságot, a minőséget, de a határidőket is'
+    description: 'A megbeszélt időpontban elkezdjük a munkát, és a lehető leggyorsabban a végére is érünk, szem előtt tartva a biztonságot, a minőséget, emellett tiszteletben tartva a határidőket is'
   },
   {
-    step: 8,
+    step: 7,
     title: 'A munka befejezése és átvétel',
-    description: 'A munka befejeztével körbevezetjük az elkészült munkaterületen és bemutatjuk az elkészült munkálatokat'
+    description: 'A munka befejeztével körbevezetjük az elkészült munkaterületen és bemutatjuk az elkészült munkát'
   }
 ];
 
@@ -60,7 +60,7 @@ export const troubleshootingProgression = [
   {
     step: 5,
     title: 'Az elhárítás befejezése',
-    description: 'Az azonnali hibaelhárítás végeztével Ön átveszi az elkészült munkát.'
+    description: 'Az azonnali hibaelhárítás végeztével Ön átveszi az elkészült munkát'
   }
 ];
 

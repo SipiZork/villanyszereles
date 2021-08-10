@@ -39,6 +39,8 @@ const StyledHeader = styled.article`
   /*margin-top: 4rem;*/
   width: 100%;
   background: url(${headerBg});
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   display: flex;
   justify-content: center;

@@ -74,9 +74,9 @@ const Header = () => {
       <div className="dark-bg"></div>
       <div className="about-info">
         <h1>38 éve a szakmában</h1>
-        <p>Közel 40 éves épület villamossági és ipari szakmai tapasztalattal vállalom lakások, házak, üzlethelységek, teljes villamos hálózatának tervezését, felújítását, kivitelezését, modern és naprakész megoldásokkal,  precíz munkavégzéssel, a határidők betartásával.</p>
+        <p>Közel 40 éves épület villamossági és ipari szakmai tapasztalattal vállalom lakások, házak, üzlethelységek, teljes villamos hálózatának tervezését, felújítását, kivitelezését. Modern és naprakész megoldásokkal,  precíz munkavégzéssel, a határidők betartásával.</p>
         <p>Továbbá vállalom villamos berendezések (bojler, tűzhely) bekötését, tönkrement vagy elavult elosztók, kapcsolók, dugaljak, lámpák cseréjét.</p>
-        <p>Keressen nyugodtan hirtelen fellépő problémákkal, én a lehető leggyorsabban megkeresem a hiba okát, amit követően azonnali javaslatot adok a javítási folyamatról és költségekről.</p>
+        <p>Keressen bizalommal hirtelen fellépő problémák esetén is, én a lehető leggyorsabban megkeresem a hiba okát, amit követően azonnali javaslatot adok a javítási folyamatról és költségekről.</p>
       </div>
     </StyledAbout>
   )

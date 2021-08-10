@@ -162,7 +162,9 @@ const StyledProgession = styled.article`
         clear: both;
         align-items: center;
         min-height: 5rem;
-        padding: 0 2rem 0 2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         &.right {
           flex-direction: row-reverse;
         }
@@ -175,7 +177,7 @@ const StyledProgession = styled.article`
           align-items: center;
           font-size: 4rem;
           font-weight: 900;
-          width: 4rem;
+          min-width: 4rem;
           
           height: 100%;
         }

@@ -32,7 +32,7 @@ export const renovationProgression = [
   {
     step: 8,
     title: 'A munka befejezése és átvétel',
-    description: 'A munka befejeztével körbevezetjük az elkészült munkaterületen és bemutatjuk az elkészült mukálatokat'
+    description: 'A munka befejeztével körbevezetjük az elkészült munkaterületen és bemutatjuk az elkészült munkálatokat'
   }
 ];
 

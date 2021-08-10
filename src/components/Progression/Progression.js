@@ -14,7 +14,7 @@ const Progression = () => {
   const changeActiveTab = (tab) => {
     if (tab === 0) {
       setActiveProgress(renovationProgression);
-      setactiveTitle('Felújítási Folyamat');
+      setactiveTitle('Felújítási / Építkezési folyamat');
     }
     if (tab === 1) {
       setActiveProgress(troubleshootingProgression);
@@ -33,13 +33,13 @@ const Progression = () => {
       <ProgressTab>
         <div className={`tab ${activeTab === 0 ? 'active' : ''}`} onClick={() => changeActiveTab(0)}>
           <div className="light-bg"></div>
-          <p>Felújítás</p>
+          <p>Felújítás / Építkezés</p>
         </div>
-        {/*<div className={`tab ${activeTab === 1 ? 'active' : ''}`} onClick={() => changeActiveTab(1)}>
+        <div className={`tab ${activeTab === 1 ? 'active' : ''}`} onClick={() => changeActiveTab(1)}>
           <div className="light-bg"></div>
           <p>Hibaelhírtás</p>
         </div>
-        <div className={`tab ${activeTab === 2 ? 'active' : ''}`} onClick={() => changeActiveTab(2)}>
+        {/*<div className={`tab ${activeTab === 2 ? 'active' : ''}`} onClick={() => changeActiveTab(2)}>
           <div className="light-bg"></div>
           <p>Kisgép bekötés</p>
         </div>*/}
@@ -55,7 +55,7 @@ const Progression = () => {
                 <div className="step-icon"> {prog.step}</div>
                 <h3>{prog.title}</h3>
               </div>
-              <div className="step-content">
+              <div className={`step-content ${prog.step % 2 === 0 ? 'right' : 'left'}`}>
                 {parse(prog.description)}
               </div>
             </div>
@@ -70,7 +70,8 @@ const Progression = () => {
 }
 
 const ProgressTab = styled.div`
-  top: 4rem;
+  /*top: 4rem;*/
+  top:0;
   left: 0;
   background: ${COLORS.bgdarkerblue};
   display: flex;
@@ -83,7 +84,7 @@ const ProgressTab = styled.div`
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
-    height: 9rem;
+    height: 5.5rem;
   }
 
   .tab {
@@ -117,6 +118,11 @@ const ProgressTab = styled.div`
     &.active, &:hover {
       .light-bg {
         height: 3rem;
+      }
+      @media screen and (max-width: 600px) {
+        .light-bg {
+          height: 2.75rem;
+        }
       }
       color: ${COLORS.textprimary};
     }
@@ -155,7 +161,8 @@ const StyledProgession = styled.article`
         display: flex;
         clear: both;
         align-items: center;
-        height: 5rem;
+        min-height: 5rem;
+        padding: 0 2rem 0 2rem;
         &.right {
           flex-direction: row-reverse;
         }
@@ -169,16 +176,21 @@ const StyledProgession = styled.article`
           font-size: 4rem;
           font-weight: 900;
           width: 4rem;
+          
           height: 100%;
         }
       }
       .step-content {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         padding: 0 2rem 2rem;
+        letter-spacing: .1rem;
+        &.right {
+          text-align: right;
+        }
 
         strong {
           color: yellow;
-          font-size: 1.5rem;
+          font-size: 1.6rem;
           text-decoration: underline;
           font-style: italic;
         }

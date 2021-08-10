@@ -30,7 +30,8 @@ const GlobalStyle = createGlobalStyle`
 
   article {
     position: relative;
-    min-height: calc(100vh - 4rem);
+    min-height: 100vh;
+    /*min-height: calc(100vh - 4rem);*/
   }
 
   .arrow {

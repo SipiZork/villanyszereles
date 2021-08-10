@@ -22,7 +22,7 @@ const Header = () => (
       <div className="email underline-container">
         <p className="underline-container">
           <div className="underline"></div>
-          villanymester@gmail.com
+          siposvillany@gmail.com
         </p>
       </div>
       <div className="tel underline-container">
@@ -36,13 +36,14 @@ const Header = () => (
 );
 
 const StyledHeader = styled.article`
-  margin-top: 4rem;
+  /*margin-top: 4rem;*/
   width: 100%;
   background: url(${headerBg});
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: .2rem;
 
   .header-info {
     position: sticky;
@@ -58,22 +59,22 @@ const StyledHeader = styled.article`
     flex-direction: column;
 
     .description {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       cursor: pointer;
     }
 
     .name {
-      font-size: 2.3rem;
+      font-size: 3.5rem;
       cursor: pointer;
     }
     
     .email {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       cursor: pointer;
     }
 
     .tel {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       cursor: pointer;
     }
   }

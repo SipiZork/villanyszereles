@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className="App">
       <GlobalStyle />
-      <Navbar changeActivePage={changeActivePage} activePage={activePage} />
+      {/*<Navbar changeActivePage={changeActivePage} activePage={activePage} />*/}
       <Route path='' exact>
         <HomePage />
       </Route>

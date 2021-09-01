@@ -3,20 +3,23 @@ import styled from 'styled-components';
 
 import { COLORS } from '../../styles/styles';
 
-const Navbar = ({ activePage, changeActivePage }) => (
-  <Nav>
+const Navbar = ({ activePage, changeActivePage, aboutRef, progressRef, headerRef, offerRef, referencesRef }) => {
+  const scrollPls = (ref) => {
+    
+  }
+  return(<Nav>
     <Logo>
       <h1>Budapest Villany</h1>
     </Logo>
-    {/*<ul>
-      <li onClick={() => changeActivePage(0)} className={activePage === 0 ? 'active' : ''}>Főoldal</li>
-      <li onClick={() => changeActivePage(1)} className={activePage === 1 ? 'active' : ''}>Rólam</li>
-      <li onClick={() => changeActivePage(2)} className={activePage === 2 ? 'active' : ''}>Folyamat</li>
-      <li onClick={() => changeActivePage(3)} className={activePage === 3 ? 'active' : ''}>Referencia</li>
-      <li onClick={() => changeActivePage(4)} className={activePage === 4 ? 'active' : ''}>Árak</li>
-    </ul>*/}
-  </Nav>
-);
+    <ul>
+      <li onClick={() => changeActivePage(0, headerRef)} className={activePage === 0 ? 'active' : ''}>Főoldal</li>
+      <li onClick={() => changeActivePage(1, aboutRef)} className={activePage === 1 ? 'active' : ''}>Rólam</li>
+      <li onClick={() => changeActivePage(2, progressRef)} className={activePage === 2 ? 'active' : ''}>Folyamat</li>
+      <li onClick={() => changeActivePage(3, referencesRef)} className={activePage === 3 ? 'active' : ''}>Referencia</li>
+      {/*<li onClick={() => changeActivePage(4, offerRef)} className={activePage === 4 ? 'active' : ''}>Kalkulátor</li>*/}
+    </ul>
+  </Nav>);
+};
 
 const Nav = styled.nav`
   position: fixed;
@@ -37,9 +40,13 @@ const Nav = styled.nav`
   ul {
     display: flex;
     list-style: none;
+    a {
+        text-decoration: none;
+        color: ${COLORS.textprimary};
+      }
     li {
-      cursor: pointer;
       padding: 0.5rem 1rem;
+      cursor: pointer;
       &.active {
         background: ${COLORS.bgdarkblue};
         color: ${COLORS.textblue}

@@ -4,7 +4,7 @@ import { COLORS } from '../../styles/styles';
 
 import headerBg from '../../styles/images/electrical_bg_1.jpg';
 
-const Header = () => {
+const Header = ({ aboutRef }) => {
 
   const [path, setPath] = useState();
   const [path2, setPath2] = useState();
@@ -62,7 +62,7 @@ const Header = () => {
   }
 
   return (
-    <StyledAbout>
+    <StyledAbout id="about" ref={aboutRef}>
       <div className="random-wires">
         {/*<svg class="blue">
           <path fill="transparent" stroke="#0095ff" strokeWidth="6" d={path} />

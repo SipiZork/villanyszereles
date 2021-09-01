@@ -5,7 +5,7 @@ import { renovationProgression, troubleshootingProgression, wiringProgression } 
 import { COLORS } from '../../styles/styles';
 import parse from 'html-react-parser';
 
-const Progression = () => {
+const Progression = ({progressRef}) => {
 
   const [activeTab, setActiveTab] = useState(0);
   const [activeProgress, setActiveProgress] = useState(renovationProgression);
@@ -28,7 +28,7 @@ const Progression = () => {
   }
 
   return (
-    <StyledProgession>
+    <StyledProgession id="progress" ref={progressRef}>
       <div className="dark-bg"></div>
       <ProgressTab>
         <div className={`tab ${activeTab === 0 ? 'active' : ''}`} onClick={() => changeActiveTab(0)}>
@@ -49,7 +49,7 @@ const Progression = () => {
       </div>
       <div className="content">
         {activeProgress.map((prog, i) => (
-          <Fragment>
+          <Fragment key={i}>
             <div className={`progress ${prog.step % 2 === 0 ? 'dark' : 'light'}`}>
               <div className={`step-title ${prog.step % 2 === 0 ? 'right' : 'left'}`}>
                 <div className="step-icon"> {prog.step}</div>
@@ -60,7 +60,7 @@ const Progression = () => {
               </div>
             </div>
             {i < activeProgress.length-1 &&
-              <ProgressArrow right={prog.step % 2 === 0 ? false : true} />
+              <ProgressArrow right={prog.step % 2 === 0 ? false : true} key={prog.step}/>
             }
           </Fragment>
         ))}

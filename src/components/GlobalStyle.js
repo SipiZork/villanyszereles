@@ -8,7 +8,14 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  .clear {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
   html {
+    scroll-behavior: smooth;
     font-size: 16px;
     @media screen and (max-width: 600px) {
       font-size: 14px;
@@ -31,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
   article {
     position: relative;
     min-height: 100vh;
-    /*min-height: calc(100vh - 4rem);*/
+    min-height: calc(100vh - 4rem);
   }
 
   .arrow {

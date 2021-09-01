@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { COLORS } from '../../styles/styles';
 
-const References = () => {
+const References = ({ referencesRef}) => {
   return (
-    <StyledReferences>
+    <StyledReferences id="references" ref={referencesRef}>
       <div className="dark-bg"></div>
       <h2>Referenciák</h2>
       <p>Feltöltés alatt...</p>

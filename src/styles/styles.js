@@ -7,7 +7,8 @@ export const COLORS = {
   bglightblue: '#82f7ff',
   bgblue: '#40c4ff',
   textblue: '#000000',
-  textprimary: '#e6e6e6'
+  textprimary: '#e6e6e6',
+  inputhover: '#003245',
 };
 
 export const ARROW = {

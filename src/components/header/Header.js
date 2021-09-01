@@ -3,33 +3,33 @@ import styled from 'styled-components';
 
 import headerBg from '../../styles/images/electrical_bg_1.jpg';
 
-const Header = () => (
-  <StyledHeader>
+const Header = ({ headerRef }) => (
+  <StyledHeader id="header" ref={headerRef}>
     <div className="dark-bg"></div>
     <div className="header-info">
       <div className="description">
-        <p className="underline-container">
+        <div className="underline-container">
           <div className="underline"></div>
-          Budapest Villany
-        </p>
+          <p>Budapest Villany</p>
+        </div>
       </div>
       <div className="name underline-container">
-        <p className="underline-container">
+        <div className="underline-container">
           <div className="underline"></div>
-          Sipos Zoltán
-        </p>
+          <p>Sipos Zoltán</p>
+        </div>
       </div>
       <div className="email underline-container">
-        <p className="underline-container">
+        <div className="underline-container">
           <div className="underline"></div>
-          siposvillany@gmail.com
-        </p>
+          <p>siposvillany@gmail.com</p>
+        </div>
       </div>
       <div className="tel underline-container">
-        <p className="underline-container">
+        <div className="underline-container">
           <div className="underline"></div>
-          +36 70 770 7828
-        </p>
+          <p>+36 70 770 7828</p>
+        </div>
       </div>
     </div>
   </StyledHeader>
@@ -37,6 +37,7 @@ const Header = () => (
 
 const StyledHeader = styled.article`
   /*margin-top: 4rem;*/
+  margin-top: 4rem;
   width: 100%;
   background: url(${headerBg});
   background-repeat: no-repeat;

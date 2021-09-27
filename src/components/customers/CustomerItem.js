@@ -12,7 +12,6 @@ const CustomerItem = ({ customer, id }) => {
   const classNames = newCustomer ? `new` : !callBack ? 'need-call' : 'called';
 
   const getDisctrict = () => {
-    console.log(zipcode[0]);
     if (zipcode[0] == 1) {
       return `${zipcode[1]}${zipcode[2]}`;
     } else {
@@ -21,7 +20,6 @@ const CustomerItem = ({ customer, id }) => {
   }
 
   const goToCustomer = () => {
-    console.log(id);
     history.push(`customer/${id}`);
   }
 

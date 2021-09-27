@@ -3,9 +3,6 @@ import styled from 'styled-components';
 import { COLORS } from '../../styles/styles';
 
 const Checker = ({ onChange, checked, children, ...props }) => {
-  if (children === 'Mosógép') {
-    console.log(checked);
-  }
   return (
     <StyledChecker className="form-group-checker">
       <input checked={checked} onChange={onChange} {...props} />

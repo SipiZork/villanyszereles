@@ -13,7 +13,6 @@ const Navbar = ({ activePage, changeActivePage, aboutRef, progressRef, headerRef
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    console.log(location);
     if (location.pathname === '/admin') {
       setAdmin(false);
     }

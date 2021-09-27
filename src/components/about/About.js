@@ -56,7 +56,6 @@ const Header = ({ aboutRef }) => {
   }, []);
 
   const pathGenerator = () => {
-    console.log(path);
     return path;
   }
 

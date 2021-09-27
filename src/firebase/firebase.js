@@ -19,7 +19,6 @@ export const db = getFirestore();
 export const addCustomer = async (size, rooms, livingroom, kitchen, bathroom,
   hall, phone, email, name, dishwasher, washingmachine, electricoven, dryer,
   typeofwork, zipcode, numberOfRooms, offers, allCircuit) => {
-  console.log('name', name);
   const customerData = {
     newCustomer: true, callBack: false, size, rooms, livingroom, kitchen, bathroom,
     hall, phone, email, name, dishwasher, washingmachine,

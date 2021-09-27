@@ -124,7 +124,6 @@ const PreOffer = ({ offerRef, addError }) => {
 
     const lightCircuit = Math.round((roomsForOffer) / 2);
     let roomCircuit = hallNumber + livingroomNumber + kitchenNumber + bathroomNumber + roomsForOffer;
-    console.log(roomCircuit);
     numberOfRooms.map(room => {
       if (!isNaN(room.assembly) && room.assembly > 0) {
         roomCircuit += parseInt(room.assembly) + 1;
@@ -154,7 +153,6 @@ const PreOffer = ({ offerRef, addError }) => {
   const giveCall = (e) => {
     e.preventDefault();
     let errs = []
-    console.log(numberOfRooms);
     const { size, rooms, livingroom, kitchen, bathroom, hall, phone, email, dishwasher,
       washingmachine, electricoven, dryer, typeofwork, zipcode, name } = formData;
 

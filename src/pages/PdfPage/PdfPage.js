@@ -21,7 +21,6 @@ const PdfPage = () => {
     let customerData = await getDoc(doc(db, 'customers', id));
     customerData = { data: customerData.data(), id: id };
     setCustomer(customerData);
-    console.log(customer);
   }, []);
 
   return (

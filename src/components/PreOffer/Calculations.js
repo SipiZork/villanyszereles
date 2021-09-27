@@ -10,7 +10,6 @@ const Calculations = ({ offers, rooms, size }) => {
   }
   
   const writeOffer = (offer, i) => {
-    console.log('offer', offer);
     if (offer > 0) {
       return (<div className="prices-group" key={i}>
         <div className="name">Áramkörök kiépítése</div>

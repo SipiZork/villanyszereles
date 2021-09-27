@@ -100,7 +100,6 @@ const PreOffer = ({ offerRef, addError }) => {
     } else if (step === 3) {
       setInactiveNextButton(false);
     } else if (step === 4) {
-      console.log(formData.phone.length);
       if (formData.name.length > 0 && formData.zipcode.length > 0 && formData.email.length > 0 && formData.phone.length > 0 && formData.accept) {
         setInactiveNextButton(false);
       } else {
@@ -169,7 +168,6 @@ const PreOffer = ({ offerRef, addError }) => {
     if (washingmachine) extraCircuit += 1;
     if (dryer) extraCircuit += 1;
 
-    console.log(roomCircuit);
     const roomCircuitForCalculate = isNaN(roomCircuit) ? 0 : roomCircuit < 15 || roomCircuit > 28 ? roomCircuit * 1.7 : roomCircuit;
     const lightCircuitForCalculate = isNaN(lightCircuit) ? 0 : lightCircuit;
     const extraCircuitForCalculate = isNaN(extraCircuit) ? 0 : extraCircuit;
@@ -190,7 +188,6 @@ const PreOffer = ({ offerRef, addError }) => {
     let allCircuit = 0;
     const { size, rooms, livingroom, kitchen, bathroom, hall, phone, email, dishwasher,
       washingmachine, electricoven, dryer, typeofwork, zipcode, name } = formData;
-      console.log(name);
     if (size.length <= 0 || rooms.length <= 0) {
       errs.push({ type: 'warning', msg: 'A Méretek kitöltése kötelező' });
     }
@@ -222,7 +219,6 @@ const PreOffer = ({ offerRef, addError }) => {
       errs.push({ type: 'warning', msg: 'Név megadása kötelező' });
     }
     if (errs.length <= 0) {
-      console.log('name elküldés előtt', name);
       addCustomer(size, rooms, livingroom, kitchen, bathroom,
         hall, phone, email, name, dishwasher, washingmachine, electricoven, dryer,
         typeofwork, zipcode, numberOfRooms, offers, (allCircuit + parseInt(livingroom) + parseInt(kitchen) + parseInt(bathroom) + parseInt(hall)));

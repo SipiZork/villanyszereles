@@ -2,9 +2,10 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs, doc, setDoc } from 'firebase/firestore';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
+const { REACT_APP_FIREBASE_API_KEY } = process.env;
 
 export const firebaseApp = initializeApp({
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: REACT_APP_FIREBASE_API_KEY,
   authDomain: "siposvillany-44891.firebaseapp.com",
   projectId: "siposvillany-44891",
   storageBucket: "siposvillany-44891.appspot.com",

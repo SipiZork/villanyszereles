@@ -21,6 +21,7 @@ const App = () => {
     setTimeout(() => {
       setErrors([]);
     }, 4000);
+    console.log(process.env.REACT_APP_FIREBASE_API_KEY);
   }
 
   const changeActivePage = (number, ref) => {

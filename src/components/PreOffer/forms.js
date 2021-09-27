@@ -6,7 +6,7 @@ export const FormOne = ({ formData, changeValue }) => (
     <div className="title-bar">
       <h4>Lakás/ház méretei </h4>
       <p>
-        <i class="fas fa-info-circle"></i> Adja meg a felújítandó lakás vagy ház alapvető méreteit
+        <i className="fas fa-info-circle"></i> Adja meg a felújítandó lakás vagy ház alapvető méreteit
       </p>
     </div>
     <div className="input-group">
@@ -30,7 +30,7 @@ export const FormTwo = ({formData, changeValue, numberOfRooms, modifyAssemblies}
     <div className="title-bar">
       <h4>Szobák kiállásainak száma</h4>
       <p>
-        <i class="fas fa-info-circle"></i> Adja meg hány fali kiállást szeretne. Beleszámítva a konnektorokat, koax és utp kiállásokat is. Például: Egy négy csatlakozós konnektor aljzat egy kiállás, mellette egy UTP-vel már két kiállás.
+        <i className="fas fa-info-circle"></i> Adja meg hány fali kiállást szeretne. Beleszámítva a konnektorokat, koax és utp kiállásokat is. Például: Egy négy csatlakozós konnektor aljzat egy kiállás, mellette egy UTP-vel már két kiállás.
       </p>
     </div>
     <div className="input-group">
@@ -52,7 +52,7 @@ export const FormThreeTest = ({ formData, changeValue }) => (
   <div className="title-bar">
     <h4>Elektromos készülékek</h4>
     <p>
-      <i class="fas fa-info-circle"></i> Adja meg milyen elektromos készülékeket használatára szeretné felkészíteni a hálozatot.
+      <i className="fas fa-info-circle"></i> Adja meg milyen elektromos készülékeket használatára szeretné felkészíteni a hálozatot.
     </p>
   </div>
   <div className="input-group">
@@ -69,7 +69,7 @@ export const FormFourTest = ({ offers, formData, formatter, ownPriceFormatter, c
     <div className="title-bar">
       <h4>Előkalkuláció*</h4>
       <p>
-        <i class="fas fa-info-circle"></i> Az árajánlat átnézése után adatai megadásával visszahívást kérhet, ahol leegyeztetheti az <strong>ingyenes</strong> kiszállási időpontot a felméréshez.
+        <i className="fas fa-info-circle"></i> Az árajánlat átnézése után adatai megadásával visszahívást kérhet, ahol leegyeztetheti az <strong>ingyenes</strong> kiszállási időpontot a felméréshez.
       </p>
     </div>
     <div className="prices">

@@ -7,7 +7,7 @@ export const renovationProgression = [
   {
     step: 2,
     title: 'Keresés',
-    description: 'Megtalál minket, és felkeres telefonon vagy email-en, amire mi még aznap reagálunk. A tervei meghallgatása után, megbeszélünk egy <strong>INGYENES</strong> kiszállási időpontot, hogy felmérjük a helyszínt, annak állapotot, és egyeztethessük személyesen is a terveit'
+    description: 'Megtalál minket, és felkeres telefonon vagy email-en, amire mi még aznap reagálunk. A tervei meghallgatása után, megbeszélünk egy <strong>INGYENES</strong> kiszállási időpontot, hogy felmérjük a helyszínt és annak állapotát, hogy egyeztethessük személyesen is a terveit'
   },
   {
     step: 3,
@@ -22,7 +22,7 @@ export const renovationProgression = [
   {
     step: 5,
     title: 'Anyagbeszerzés',
-    description: 'Mi nem próbáljuk meg az árajánlatból kimaradt összegeket az anyagáron behozni. Éppen ezért javasoljuk, hogy személyesen áruházban, vagy akár egy villanyszerelési webshopban szerezze be a szereléshez általunk összeírt anyagokat. Természetesen ha segítségre van szüksége, készséggel állunk rendelkezésére. Ha mégis szeretné, hogy mi szerezzük be az anyagokat, természetesen annak sincs semmi akadálya'
+    description: 'Mi nem próbáljuk meg az árajánlatból kimaradt összegeket az anyagáron behozni. Éppen ezért javasoljuk, hogy személyesen áruházban, vagy akár egy villanyszerelési webshopban szerezze be a szereléshez általunk összeírt anyagokat. Természetesen ha segítségre van szüksége, készséggel állunk rendelkezésére. Amennyiben mégis szeretné, hogy mi szerezzük be az anyagokat, annak sincs semmi akadálya'
   },
   {
     step: 6,
@@ -31,7 +31,7 @@ export const renovationProgression = [
   },
   {
     step: 7,
-    title: 'A munka befejezése és átvétel',
+    title: 'Átadás-Átvétel',
     description: 'A munka befejeztével körbevezetjük az elkészült munkaterületen és bemutatjuk az elkészült munkát'
   }
 ];

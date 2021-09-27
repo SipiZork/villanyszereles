@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import headerBg from '../../styles/images/electrical_bg_1.jpg';
+import Logo from '../../styles/images/siposvillany_logo_original.svg';
 
 const Header = ({ headerRef }) => (
   <StyledHeader id="header" ref={headerRef}>
@@ -10,7 +11,7 @@ const Header = ({ headerRef }) => (
       <div className="description">
         <div className="underline-container">
           <div className="underline"></div>
-          <p>Budapest Villany</p>
+          <img src={Logo} alt="logo" />
         </div>
       </div>
       <div className="name underline-container">
@@ -36,7 +37,6 @@ const Header = ({ headerRef }) => (
 );
 
 const StyledHeader = styled.article`
-  /*margin-top: 4rem;*/
   margin-top: 4rem;
   width: 100%;
   background: url(${headerBg});
@@ -64,6 +64,10 @@ const StyledHeader = styled.article`
     .description {
       font-size: 1.5rem;
       cursor: pointer;
+
+      img {
+        width: 20rem;
+      }
     }
 
     .name {

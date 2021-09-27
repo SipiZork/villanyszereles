@@ -39,7 +39,6 @@ const Header = ({ aboutRef }) => {
         } else {
           directionPositive = Math.random() < 0.8;
         }
-        console.log(typeof positionY);
         if (directionPositive) {
           positionY += Math.floor(Math.random() * (200 - 50) + 50);
         } else {

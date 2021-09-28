@@ -17,7 +17,7 @@ const PreOffer = ({ offerRef, addError }) => {
 
   const [formData, setFormData] = useState({
     accept: false,
-    size: '12',
+    size: '',
     rooms: '',
     livingroom: '',
     kitchen: '',

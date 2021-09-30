@@ -1,6 +1,7 @@
 import React, {useState, Fragment, useEffect} from 'react';
 import styled from 'styled-components';
 import { useLocation, useHistory } from 'react-router';
+import { Link } from 'react-router-dom'
 
 import LogoHorizontal from '../../styles/images/siposvillany_logo_horizontal.svg';
 import { COLORS } from '../../styles/styles';
@@ -21,9 +22,11 @@ const Navbar = ({ activePage, changeActivePage, aboutRef, progressRef, headerRef
   }, [])
 
   return (<Nav>
-    <Logo>
-      <img src={LogoHorizontal} alt="logo" />
-    </Logo>
+    <Link to="/">
+      <Logo>
+        <img src={LogoHorizontal} alt="logo" />
+      </Logo>
+    </Link>
     <div className={`menu-btn ${open ? 'open' : 'close'}`} onClick={() => setOpen(!open)}>
       <div className="menu-btn__hamburger"></div>
     </div>

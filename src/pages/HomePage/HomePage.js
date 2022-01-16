@@ -13,7 +13,7 @@ const HomePage = ({ aboutRef, progressRef, offerRef, referencesRef, headerRef, a
       <About aboutRef={aboutRef} />
       <Progression progressRef={progressRef} />
       {/*<References referencesRef={referencesRef}/>*/}
-      <PreOffer offerRef={offerRef} addError={addError} />
+      {/*<PreOffer offerRef={offerRef} addError={addError} />*/}
     </Fragment>
   );
 };

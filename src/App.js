@@ -1,5 +1,5 @@
 import React, { useState, createRef, useEffect } from 'react';
-import { Route, Switch, useLocation } from 'react-router-dom';
+import { Redirect, Route, Switch, useLocation } from 'react-router-dom';
 
 import HomePage from './pages/HomePage/HomePage';
 import AdminPage from './pages/AdminPage/AdminPage';
@@ -61,6 +61,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Redirect to="/" />
       <GlobalStyle />
       {errors &&
         <Errors errors={errors} />
@@ -69,17 +70,17 @@ const App = () => {
         <Navbar changeActivePage={changeActivePage} activePage={activePage} headerRef={headerRef} aboutRef={aboutRef} progressRef={progressRef} referencesRef={referencesRef} offerRef={offerRef} />
       }
       <Switch>
-        <Route exact path='/'>
-          <HomePage addError={addError} headerRef={headerRef} aboutRef={aboutRef} progressRef={progressRef} referencesRef={referencesRef} offerRef={offerRef} />
-        </Route>
-        <Route path='/admin'>
+        {/*<Route path='/admin'>
           <AdminPage />
-        </Route>
+        </Route>*
         <Route exact path='/customer/:id'>
           <CustomerPage />
         </Route>
         <Route path='/customer/:id/pdf'>
           <PdfPage />
+       </Route>*/}
+        <Route path='/'>
+          <HomePage addError={addError} headerRef={headerRef} aboutRef={aboutRef} progressRef={progressRef} referencesRef={referencesRef} offerRef={offerRef} />
         </Route>
 
       </Switch>

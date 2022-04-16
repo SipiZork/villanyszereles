@@ -90,16 +90,19 @@ export const FormFourTest = ({ offers, formData, formatter, ownPriceFormatter, c
         <div className="price">{ownPriceFormatter(formatter.format(offers.circuitOffer + offers.assemblyOffer + offers.typeOfWorkOffer))}**</div>
       </div>
     </div>
-    <div className="input-group">
+    {/*<div className="input-group">
       <Input onChange={changeValue} type="name" name="name" value={formData.name} required >Teljes név</Input>
       <Input onChange={changeValue} type="number" name="zipcode" value={formData.zipcode} required>Irányítószám</Input>
       <Input onChange={changeValue} type="text" name="email" value={formData.email} required>Email cím</Input>
       <Input onChange={changeValue} type="text" name="phone" value={formData.phone} placeholder="+36 30 123 4567" required>Telefonszám</Input>
       <Checker onChange={changeValue} type="checkbox" name="accept" checked={formData.accept}>Elolvastam és elfogadom az Adatkezelési nyilatkozatot</Checker>
-    </div>
+</div> */}
     <div className="details">
       <p><strong>*</strong> Az árak tájékoztató jellegűek, melyek nem minősülnek ajánlattételnek.</p>
-      <p><strong>**</strong> Az árak tartalmazzák az ÁFA-t. Az árak nem tartalmazzák az anyagköltséget.</p>
+      <p><strong>**</strong> Az árak tartalmazzák az ÁFA-t. </p>
+      <p><strong>***</strong> Az árak nem tartalmazzák az anyagköltséget.</p>
+      <br></br>
+      <p><b>Az érdeklődés elküldése sajnos jelenleg nem üzemel, kérem vegye fel a kapcsoaltot velünk elérhetőségeink egyikén.</b></p>
     </div>
   </div>
 )

@@ -39,8 +39,8 @@ const Navbar = ({ activePage, changeActivePage, aboutRef, progressRef, headerRef
         <li onClick={() => { changeActivePage(0, headerRef); setOpen(false)}} className={activePage === 0 ? 'active' : ''}>Kapcsolat</li>
         <li onClick={() => { changeActivePage(1, aboutRef); setOpen(false)}} className={activePage === 1 ? 'active' : ''}>Rólam</li>
         <li onClick={() => { changeActivePage(2, progressRef); setOpen(false)}} className={activePage === 2 ? 'active' : ''}>Folyamat</li>
-          {/*<li onClick={() => changeActivePage(3, referencesRef)} className={activePage === 3 ? 'active' : ''}>Referencia</li>
-        <li onClick={() => { changeActivePage(4, offerRef); setOpen(false)}} className={activePage === 4 ? 'active attention' : 'attention'}>Kalkulátor</li>*/}
+          {/*<li onClick={() => changeActivePage(3, referencesRef)} className={activePage === 3 ? 'active' : ''}>Referencia</li>*/}
+        <li onClick={() => { changeActivePage(3, offerRef); setOpen(false)}} className={activePage === 4 ? 'active attention' : 'attention'}>Kalkulátor</li>
         </Fragment>
       }
     </ul>
